@@ -1,0 +1,10 @@
+type Task {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  completedAt: DateTime
+  deletedAt: DateTime
+  isComplete: Boolean! @default(value: "false")
+  isDeleted: Boolean! @default(value: "false")
+  title: String!
+}

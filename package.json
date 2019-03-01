@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "@types/dotenv": "^6.1.0",
+    "dotenv": "^6.2.0",
+    "graphql-yoga": "^1.17.4",
+    "prisma": "^3.1.0",
+    "prisma-client-lib": "^1.27.4"
+  },
+  "devDependencies": {
+    "graphqlgen": "^0.5.1",
+    "nodemon": "^1.18.10",
+    "ts-node": "8.0.2",
+    "apollo": "^2.5.3",
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "type-check": "tsc",
+    "start": "ts-node src/index.ts",
+    "generate": "graphqlgen",
+    "local": "yarn generate && nodemon --exec yarn start",
+    "deploy_local": "prisma deploy --env-file ./.env.local && yarn generate"
+  }
+}

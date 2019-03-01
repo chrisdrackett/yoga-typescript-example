@@ -1,0 +1,35 @@
+# import TaskWhereInput, TaskOrderByInput from "./generated/prisma.graphql"
+
+scalar DateTime
+
+type Query {
+  tasks(
+    where: TaskWhereInput
+    orderBy: TaskOrderByInput
+    skip: Int
+    after: String
+    before: String
+    first: Int
+    last: Int
+  ): [Task]!
+  task(id: ID!): Task
+}
+
+type Mutation {
+  createTask(title: String!): Task!
+  setDeleted(id: ID!, deletedAt: DateTime!): Task!
+  setComplete(id: ID!, completedAt: DateTime!): Task!
+  setIncomplete(id: ID!): Task!
+  updateTitle(id: ID!, title: String!): Task!
+}
+
+type Task {
+  id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  completedAt: DateTime
+  deletedAt: DateTime
+  isComplete: Boolean!
+  isDeleted: Boolean!
+  title: String!
+}
