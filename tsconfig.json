@@ -4,8 +4,6 @@
     "lib": ["esnext", "dom"],
     "module": "commonjs",
     "moduleResolution": "node",
-    "declaration": true,
-    "declarationMap": true,
     "allowJs": true,
     "jsx": "preserve",
     "noEmit": true,
