@@ -1,10 +1,10 @@
 {
   "version": 2,
   "name": "yoga-typescript-test",
-  "builds": [{ "src": "src/index.ts", "use": "@now/node-server@canary" }],
+  "builds": [{ "src": "src/index.ts", "use": "@now/node-server" }],
   "routes": [
     {
-      "src": "/api/.*",
+      "src": "/.*",
       "dest": "src/index.ts"
     }
   ]
