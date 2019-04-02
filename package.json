@@ -13,9 +13,9 @@
   "devDependencies": {
     "graphqlgen": "^0.5.1",
     "nodemon": "^1.18.10",
-    "ts-node": "8.0.2",
-    "apollo": "^2.5.3",
-    "typescript": "^3.3.3333"
+    "ts-node": "8.0.3",
+    "apollo": "^2.7.0",
+    "typescript": "^3.4.1"
   },
   "scripts": {
     "type-check": "tsc",
