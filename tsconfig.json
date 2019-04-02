@@ -26,18 +26,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 
-    "baseUrl": "./",
-    "paths": {
-      "core": ["core"],
-      "paradigm": ["paradigm"]
-    }
+    "baseUrl": "./"
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "**/*.stories.tsx",
-    "**/stories.tsx",
-    "src/resolvers-temp"
-  ]
+  "exclude": ["node_modules", "build", "scripts", "src/resolvers-temp"]
 }
