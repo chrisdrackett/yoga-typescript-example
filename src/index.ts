@@ -7,7 +7,7 @@ import { GraphQLServer } from "graphql-yoga";
 import { resolvers } from "./resolvers";
 import { prisma } from "./generated/prisma-client";
 
-const path = require("path");
+import * as path from "path";
 
 const server = new GraphQLServer({
   typeDefs: path.join(__dirname, "schema.graphql"),
